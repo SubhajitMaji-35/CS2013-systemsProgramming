@@ -1,0 +1,65 @@
+===================
+test1: NO LEAKS
+Valgrind output: 
+==5644== Memcheck, a memory error detector
+==5644== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==5644== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==5644== Command: /home/subhajit/Documents/systems_programming/labe2/src/3/3
+==5644== 
+511104 359209 298816 849344 147249 622656 
+==5644== 
+==5644== HEAP SUMMARY:
+==5644==     in use at exit: 0 bytes in 0 blocks
+==5644==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==5644== 
+==5644== All heap blocks were freed -- no leaks are possible
+==5644== 
+==5644== For lists of detected and suppressed errors, rerun with: -s
+==5644== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test2: NO LEAKS
+Valgrind output: 
+==5649== Memcheck, a memory error detector
+==5649== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==5649== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==5649== Command: /home/subhajit/Documents/systems_programming/labe2/src/3/3
+==5649== 
+140096 765625 0 67584 601009 718336 
+==5649== 
+==5649== HEAP SUMMARY:
+==5649==     in use at exit: 0 bytes in 0 blocks
+==5649==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==5649== 
+==5649== All heap blocks were freed -- no leaks are possible
+==5649== 
+==5649== For lists of detected and suppressed errors, rerun with: -s
+==5649== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test3: NO LEAKS
+Valgrind output: 
+==5654== Memcheck, a memory error detector
+==5654== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==5654== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==5654== Command: /home/subhajit/Documents/systems_programming/labe2/src/3/3
+==5654== 
+385663 511104 298816 359209 385663 385663 385663 
+==5654== 
+==5654== HEAP SUMMARY:
+==5654==     in use at exit: 0 bytes in 0 blocks
+==5654==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==5654== 
+==5654== All heap blocks were freed -- no leaks are possible
+==5654== 
+==5654== For lists of detected and suppressed errors, rerun with: -s
+==5654== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+++++++++++++++++++++++
+TESTS_WITH_NO_LEAK: 3
+TESTS_SHOWING_LEAK: 0
+++++++++++++++++++++++
+
