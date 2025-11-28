@@ -1,0 +1,29 @@
+# Implicit variables
+# CC = Program for compiling C, default is gcc
+# CXX = Program for compiling C++, default is g++
+# CFLAGS = Extra flags to be passed to the C compiler
+# CXXFLAGS = Extra flags to be passed to the C++ compiler
+
+build: all
+
+CC = gcc
+objects := test.o main.o lib.o
+
+
+all: $(objects)
+	$(CC) $^ -o main
+
+# Write a static pattern rule
+$(objects): %.o : %.c
+	$(CC) -c $^ -o $@
+
+# Explanation:
+# In the case of the first target, test.o, the target-pattern matches test.o
+# and sets the "stem" to be "test" It then replaces the '%' in prereq-patterns
+# with that stem
+
+%.c:
+	touch $@
+
+clean:
+	rm -f $(objects)

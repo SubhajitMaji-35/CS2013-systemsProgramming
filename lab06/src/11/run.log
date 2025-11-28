@@ -39,11 +39,13 @@ Got output:
 ===================
 
 ===================
-test1: PASSED
+test1: FAILED
 Given input
 1
-Got output: 
+Expected output: 
 0 
+Got output: 
+0 1 
 ===================
 
 ===================
@@ -85,7 +87,7 @@ Got output:
 
 
 +++++++++++++++++++
-TESTS_PASSED: 7
-TESTS_FAILED: 0
+TESTS_PASSED: 6
+TESTS_FAILED: 1
 +++++++++++++++++++
 

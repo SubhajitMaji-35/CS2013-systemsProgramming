@@ -10,8 +10,8 @@ int main()
 	//Do not add/modify anything about this line
 	//TODO: Complete the code
 	current = 0;
-	if(value == 1 || value ==0){
-		printf("%3d", current);
+	if(value ==0){
+		printf("%d ", current);
 	}
 	else{
 		int j = 1;
@@ -20,7 +20,7 @@ int main()
 			int i = j;
 			current2= current;
 			while( current2<= value ){
-				printf("%3d",current2 );
+				printf("%d ",current2 );
 				current2+=i;
 				i++;
 			}

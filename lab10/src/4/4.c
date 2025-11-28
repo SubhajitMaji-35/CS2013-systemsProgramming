@@ -13,16 +13,15 @@ int main()
 
 	// TODO: Complete the main function which adds a and b and prints the
 	// result
-	Bigint * c = malloc(sizeof(Bigint));
-	initialize(c);
+	Bigint * c;
 
 	c= add(a,b);
 
 	print(c);
-
-	free(a);
-	free(b);
-	free(c);
+	
+	free_bigint(a);
+	free_bigint(b);
+	free_bigint(c);
 	return 0;
 }
 

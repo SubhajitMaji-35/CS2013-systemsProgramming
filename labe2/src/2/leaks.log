@@ -1,176 +1,477 @@
 ===================
+test5: NO LEAKS
+Valgrind output: 
+==7460== Memcheck, a memory error detector
+==7460== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==7460== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==7460== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
+==7460== 
+==7460== Invalid write of size 1
+==7460==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
+==7460==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
+==7460==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7460==  Address 0x5225089 is 0 bytes after a block of size 9 alloc'd
+==7460==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7460==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7460== 
+==7460== Invalid read of size 1
+==7460==    at 0x400718: encryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7460==    by 0x400823: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7460==  Address 0x5225089 is 0 bytes after a block of size 9 alloc'd
+==7460==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7460==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7460== 
+==7460== Invalid read of size 1
+==7460==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
+==7460==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
+==7460==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
+==7460==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7460==  Address 0x5225089 is 0 bytes after a block of size 9 alloc'd
+==7460==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7460==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7460== 
+unsjfuuqj==7460== 
+==7460== HEAP SUMMARY:
+==7460==     in use at exit: 0 bytes in 0 blocks
+==7460==   total heap usage: 3 allocs, 3 frees, 16,393 bytes allocated
+==7460== 
+==7460== All heap blocks were freed -- no leaks are possible
+==7460== 
+==7460== For lists of detected and suppressed errors, rerun with: -s
+==7460== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test9: NO LEAKS
+Valgrind output: 
+==7467== Memcheck, a memory error detector
+==7467== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==7467== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==7467== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
+==7467== 
+==7467== Invalid write of size 1
+==7467==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
+==7467==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
+==7467==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7467==  Address 0x522508b is 0 bytes after a block of size 11 alloc'd
+==7467==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7467==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7467== 
+==7467== Invalid read of size 1
+==7467==    at 0x400718: encryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7467==    by 0x400823: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7467==  Address 0x522508b is 0 bytes after a block of size 11 alloc'd
+==7467==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7467==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7467== 
+==7467== Invalid read of size 1
+==7467==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
+==7467==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
+==7467==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
+==7467==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7467==  Address 0x522508b is 0 bytes after a block of size 11 alloc'd
+==7467==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7467==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7467== 
+Wkxuvgdb@12==7467== 
+==7467== HEAP SUMMARY:
+==7467==     in use at exit: 0 bytes in 0 blocks
+==7467==   total heap usage: 3 allocs, 3 frees, 16,395 bytes allocated
+==7467== 
+==7467== All heap blocks were freed -- no leaks are possible
+==7467== 
+==7467== For lists of detected and suppressed errors, rerun with: -s
+==7467== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test7: NO LEAKS
+Valgrind output: 
+==7473== Memcheck, a memory error detector
+==7473== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==7473== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==7473== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
+==7473== 
+==7473== Invalid write of size 1
+==7473==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
+==7473==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
+==7473==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7473==  Address 0x522508d is 0 bytes after a block of size 13 alloc'd
+==7473==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7473==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7473== 
+==7473== Invalid read of size 1
+==7473==    at 0x4007B4: decryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7473==    by 0x40083E: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7473==  Address 0x522508d is 0 bytes after a block of size 13 alloc'd
+==7473==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7473==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7473== 
+==7473== Invalid read of size 1
+==7473==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
+==7473==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
+==7473==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
+==7473==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7473==  Address 0x522508d is 0 bytes after a block of size 13 alloc'd
+==7473==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7473==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7473== 
+ILoveIceCream==7473== 
+==7473== HEAP SUMMARY:
+==7473==     in use at exit: 0 bytes in 0 blocks
+==7473==   total heap usage: 3 allocs, 3 frees, 16,397 bytes allocated
+==7473== 
+==7473== All heap blocks were freed -- no leaks are possible
+==7473== 
+==7473== For lists of detected and suppressed errors, rerun with: -s
+==7473== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+===================
+
+===================
 test2: NO LEAKS
 Valgrind output: 
-==5006== Memcheck, a memory error detector
-==5006== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==5006== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==5006== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
-==5006== 
-==5006== Invalid write of size 1
-==5006==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
-==5006==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
-==5006==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5006==  Address 0x522508d is 0 bytes after a block of size 13 alloc'd
-==5006==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5006==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5006== 
-==5006== Invalid read of size 1
-==5006==    at 0x400718: encryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5006==    by 0x400823: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5006==  Address 0x522508d is 0 bytes after a block of size 13 alloc'd
-==5006==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5006==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5006== 
-==5006== Invalid read of size 1
-==5006==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
-==5006==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
-==5006==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
-==5006==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5006==  Address 0x522508d is 0 bytes after a block of size 13 alloc'd
-==5006==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5006==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5006== 
-nvujoz_Csvuvt==5006== 
-==5006== HEAP SUMMARY:
-==5006==     in use at exit: 0 bytes in 0 blocks
-==5006==   total heap usage: 3 allocs, 3 frees, 16,397 bytes allocated
-==5006== 
-==5006== All heap blocks were freed -- no leaks are possible
-==5006== 
-==5006== For lists of detected and suppressed errors, rerun with: -s
-==5006== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==7478== Memcheck, a memory error detector
+==7478== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==7478== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==7478== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
+==7478== 
+==7478== Invalid write of size 1
+==7478==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
+==7478==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
+==7478==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7478==  Address 0x522508a is 0 bytes after a block of size 10 alloc'd
+==7478==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7478==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7478== 
+==7478== Invalid read of size 1
+==7478==    at 0x400718: encryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7478==    by 0x400823: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7478==  Address 0x522508a is 0 bytes after a block of size 10 alloc'd
+==7478==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7478==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7478== 
+==7478== Invalid read of size 1
+==7478==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
+==7478==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
+==7478==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
+==7478==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7478==  Address 0x522508a is 0 bytes after a block of size 10 alloc'd
+==7478==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7478==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7478== 
+jkixevzout==7478== 
+==7478== HEAP SUMMARY:
+==7478==     in use at exit: 0 bytes in 0 blocks
+==7478==   total heap usage: 3 allocs, 3 frees, 16,394 bytes allocated
+==7478== 
+==7478== All heap blocks were freed -- no leaks are possible
+==7478== 
+==7478== For lists of detected and suppressed errors, rerun with: -s
+==7478== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test8: NO LEAKS
+Valgrind output: 
+==7483== Memcheck, a memory error detector
+==7483== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==7483== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==7483== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
+==7483== 
+==7483== Invalid write of size 1
+==7483==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
+==7483==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
+==7483==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7483==  Address 0x5225085 is 0 bytes after a block of size 5 alloc'd
+==7483==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7483==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7483== 
+==7483== Invalid read of size 1
+==7483==    at 0x400718: encryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7483==    by 0x400823: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7483==  Address 0x5225085 is 0 bytes after a block of size 5 alloc'd
+==7483==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7483==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7483== 
+==7483== Invalid read of size 1
+==7483==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
+==7483==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
+==7483==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
+==7483==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7483==  Address 0x5225085 is 0 bytes after a block of size 5 alloc'd
+==7483==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7483==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7483== 
+Qsric==7483== 
+==7483== HEAP SUMMARY:
+==7483==     in use at exit: 0 bytes in 0 blocks
+==7483==   total heap usage: 3 allocs, 3 frees, 16,389 bytes allocated
+==7483== 
+==7483== All heap blocks were freed -- no leaks are possible
+==7483== 
+==7483== For lists of detected and suppressed errors, rerun with: -s
+==7483== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test6: NO LEAKS
+Valgrind output: 
+==7488== Memcheck, a memory error detector
+==7488== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==7488== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==7488== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
+==7488== 
+==7488== Invalid write of size 1
+==7488==    at 0x4EC26BC: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488==  Address 0x5225087 is 0 bytes after a block of size 7 alloc'd
+==7488==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7488==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488== 
+==7488== Invalid write of size 1
+==7488==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488==  Address 0x5225089 is 2 bytes after a block of size 7 alloc'd
+==7488==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7488==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488== 
+==7488== Invalid read of size 1
+==7488==    at 0x4007B4: decryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488==    by 0x40083E: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488==  Address 0x5225087 is 0 bytes after a block of size 7 alloc'd
+==7488==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7488==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488== 
+==7488== Invalid read of size 1
+==7488==    at 0x40073F: decryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488==    by 0x40083E: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488==  Address 0x5225087 is 0 bytes after a block of size 7 alloc'd
+==7488==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7488==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488== 
+==7488== Invalid write of size 1
+==7488==    at 0x4007A9: decryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488==    by 0x40083E: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488==  Address 0x5225087 is 0 bytes after a block of size 7 alloc'd
+==7488==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7488==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488== 
+==7488== Invalid read of size 1
+==7488==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
+==7488==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488==  Address 0x5225087 is 0 bytes after a block of size 7 alloc'd
+==7488==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7488==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488== 
+==7488== Invalid read of size 1
+==7488==    at 0x4EDFA80: _IO_default_xsputn (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x4EDDD00: _IO_file_xsputn@@GLIBC_2.2.5 (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x4EB40DE: vfprintf (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488==  Address 0x5225087 is 0 bytes after a block of size 7 alloc'd
+==7488==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7488==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488== 
+==7488== Invalid read of size 1
+==7488==    at 0x4EDFA8F: _IO_default_xsputn (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x4EDDD00: _IO_file_xsputn@@GLIBC_2.2.5 (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x4EB40DE: vfprintf (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
+==7488==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488==  Address 0x5225088 is 1 bytes after a block of size 7 alloc'd
+==7488==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7488==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7488== 
+GoldCoins==7488== 
+==7488== HEAP SUMMARY:
+==7488==     in use at exit: 0 bytes in 0 blocks
+==7488==   total heap usage: 3 allocs, 3 frees, 16,391 bytes allocated
+==7488== 
+==7488== All heap blocks were freed -- no leaks are possible
+==7488== 
+==7488== For lists of detected and suppressed errors, rerun with: -s
+==7488== ERROR SUMMARY: 15 errors from 8 contexts (suppressed: 0 from 0)
 ===================
 
 ===================
 test1: NO LEAKS
 Valgrind output: 
-==5011== Memcheck, a memory error detector
-==5011== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==5011== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==5011== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
-==5011== 
-==5011== Invalid write of size 1
-==5011==    at 0x4EC26BC: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011==  Address 0x5225087 is 0 bytes after a block of size 7 alloc'd
-==5011==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5011==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011== 
-==5011== Invalid write of size 1
-==5011==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011==  Address 0x5225089 is 2 bytes after a block of size 7 alloc'd
-==5011==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5011==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011== 
-==5011== Invalid read of size 1
-==5011==    at 0x400718: encryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011==    by 0x400823: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011==  Address 0x5225087 is 0 bytes after a block of size 7 alloc'd
-==5011==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5011==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011== 
-==5011== Invalid read of size 1
-==5011==    at 0x40069F: encryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011==    by 0x400823: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011==  Address 0x5225087 is 0 bytes after a block of size 7 alloc'd
-==5011==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5011==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011== 
-==5011== Invalid write of size 1
-==5011==    at 0x40070D: encryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011==    by 0x400823: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011==  Address 0x5225087 is 0 bytes after a block of size 7 alloc'd
-==5011==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5011==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011== 
-==5011== Invalid read of size 1
-==5011==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
-==5011==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011==  Address 0x5225087 is 0 bytes after a block of size 7 alloc'd
-==5011==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5011==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011== 
-==5011== Invalid read of size 1
-==5011==    at 0x4EDFA80: _IO_default_xsputn (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x4EDDD00: _IO_file_xsputn@@GLIBC_2.2.5 (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x4EB40DE: vfprintf (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011==  Address 0x5225087 is 0 bytes after a block of size 7 alloc'd
-==5011==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5011==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011== 
-==5011== Invalid read of size 1
-==5011==    at 0x4EDFA8F: _IO_default_xsputn (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x4EDDD00: _IO_file_xsputn@@GLIBC_2.2.5 (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x4EB40DE: vfprintf (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
-==5011==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011==  Address 0x5225088 is 1 bytes after a block of size 7 alloc'd
-==5011==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5011==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5011== 
-JrogFrlqv==5011== 
-==5011== HEAP SUMMARY:
-==5011==     in use at exit: 0 bytes in 0 blocks
-==5011==   total heap usage: 3 allocs, 3 frees, 16,391 bytes allocated
-==5011== 
-==5011== All heap blocks were freed -- no leaks are possible
-==5011== 
-==5011== For lists of detected and suppressed errors, rerun with: -s
-==5011== ERROR SUMMARY: 15 errors from 8 contexts (suppressed: 0 from 0)
+==7493== Memcheck, a memory error detector
+==7493== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==7493== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==7493== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
+==7493== 
+==7493== Invalid write of size 1
+==7493==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
+==7493==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
+==7493==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7493==  Address 0x522508a is 0 bytes after a block of size 10 alloc'd
+==7493==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7493==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7493== 
+==7493== Invalid read of size 1
+==7493==    at 0x400718: encryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7493==    by 0x400823: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7493==  Address 0x522508a is 0 bytes after a block of size 10 alloc'd
+==7493==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7493==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7493== 
+==7493== Invalid read of size 1
+==7493==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
+==7493==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
+==7493==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
+==7493==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7493==  Address 0x522508a is 0 bytes after a block of size 10 alloc'd
+==7493==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7493==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7493== 
+hqfubswlrq==7493== 
+==7493== HEAP SUMMARY:
+==7493==     in use at exit: 0 bytes in 0 blocks
+==7493==   total heap usage: 3 allocs, 3 frees, 16,394 bytes allocated
+==7493== 
+==7493== All heap blocks were freed -- no leaks are possible
+==7493== 
+==7493== For lists of detected and suppressed errors, rerun with: -s
+==7493== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test10: NO LEAKS
+Valgrind output: 
+==7498== Memcheck, a memory error detector
+==7498== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==7498== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==7498== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
+==7498== 
+==7498== Invalid write of size 1
+==7498==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
+==7498==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
+==7498==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7498==  Address 0x5225083 is 0 bytes after a block of size 3 alloc'd
+==7498==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7498==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7498== 
+==7498== Invalid read of size 1
+==7498==    at 0x400718: encryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7498==    by 0x400823: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7498==  Address 0x5225083 is 0 bytes after a block of size 3 alloc'd
+==7498==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7498==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7498== 
+==7498== Invalid read of size 1
+==7498==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
+==7498==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
+==7498==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
+==7498==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7498==  Address 0x5225083 is 0 bytes after a block of size 3 alloc'd
+==7498==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7498==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7498== 
+ATU==7498== 
+==7498== HEAP SUMMARY:
+==7498==     in use at exit: 0 bytes in 0 blocks
+==7498==   total heap usage: 3 allocs, 3 frees, 16,387 bytes allocated
+==7498== 
+==7498== All heap blocks were freed -- no leaks are possible
+==7498== 
+==7498== For lists of detected and suppressed errors, rerun with: -s
+==7498== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test4: NO LEAKS
+Valgrind output: 
+==7503== Memcheck, a memory error detector
+==7503== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==7503== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==7503== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
+==7503== 
+==7503== Invalid write of size 1
+==7503==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
+==7503==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
+==7503==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7503==  Address 0x5225083 is 0 bytes after a block of size 3 alloc'd
+==7503==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7503==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7503== 
+==7503== Invalid read of size 1
+==7503==    at 0x400718: encryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7503==    by 0x400823: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7503==  Address 0x5225083 is 0 bytes after a block of size 3 alloc'd
+==7503==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7503==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7503== 
+==7503== Invalid read of size 1
+==7503==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
+==7503==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
+==7503==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
+==7503==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7503==  Address 0x5225083 is 0 bytes after a block of size 3 alloc'd
+==7503==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7503==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7503== 
+g!@==7503== 
+==7503== HEAP SUMMARY:
+==7503==     in use at exit: 0 bytes in 0 blocks
+==7503==   total heap usage: 3 allocs, 3 frees, 16,387 bytes allocated
+==7503== 
+==7503== All heap blocks were freed -- no leaks are possible
+==7503== 
+==7503== For lists of detected and suppressed errors, rerun with: -s
+==7503== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
 ===================
 
 ===================
 test3: NO LEAKS
 Valgrind output: 
-==5016== Memcheck, a memory error detector
-==5016== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==5016== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==5016== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
-==5016== 
-==5016== Invalid write of size 1
-==5016==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
-==5016==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
-==5016==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5016==  Address 0x522509d is 0 bytes after a block of size 29 alloc'd
-==5016==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5016==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5016== 
-==5016== Invalid read of size 1
-==5016==    at 0x4007B4: decryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5016==    by 0x40083E: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5016==  Address 0x522509d is 0 bytes after a block of size 29 alloc'd
-==5016==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5016==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5016== 
-==5016== Invalid read of size 1
-==5016==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
-==5016==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
-==5016==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
-==5016==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5016==  Address 0x522509d is 0 bytes after a block of size 29 alloc'd
-==5016==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
-==5016==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
-==5016== 
-et_you_brute_then_fall_caesar==5016== 
-==5016== HEAP SUMMARY:
-==5016==     in use at exit: 0 bytes in 0 blocks
-==5016==   total heap usage: 3 allocs, 3 frees, 16,413 bytes allocated
-==5016== 
-==5016== All heap blocks were freed -- no leaks are possible
-==5016== 
-==5016== For lists of detected and suppressed errors, rerun with: -s
-==5016== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==7508== Memcheck, a memory error detector
+==7508== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==7508== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==7508== Command: /home/112401035/cs2013_112401035/labe2/src/2/2
+==7508== 
+==7508== Invalid write of size 1
+==7508==    at 0x4EC2852: _IO_vfscanf (in /usr/lib64/libc-2.28.so)
+==7508==    by 0x4ECFABB: __isoc99_scanf (in /usr/lib64/libc-2.28.so)
+==7508==    by 0x40080A: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7508==  Address 0x5225088 is 0 bytes after a block of size 8 alloc'd
+==7508==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7508==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7508== 
+==7508== Invalid read of size 1
+==7508==    at 0x4007B4: decryption (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7508==    by 0x40083E: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7508==  Address 0x5225088 is 0 bytes after a block of size 8 alloc'd
+==7508==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7508==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7508== 
+==7508== Invalid read of size 1
+==7508==    at 0x4C421F4: strlen (vg_replace_strmem.c:502)
+==7508==    by 0x4EB435C: vfprintf (in /usr/lib64/libc-2.28.so)
+==7508==    by 0x4EBAA19: printf (in /usr/lib64/libc-2.28.so)
+==7508==    by 0x400854: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7508==  Address 0x5225088 is 0 bytes after a block of size 8 alloc'd
+==7508==    at 0x4C39185: malloc (vg_replace_malloc.c:442)
+==7508==    by 0x4007E8: main (in /home/112401035/cs2013_112401035/labe2/src/2/2)
+==7508== 
+jacwpera==7508== 
+==7508== HEAP SUMMARY:
+==7508==     in use at exit: 0 bytes in 0 blocks
+==7508==   total heap usage: 3 allocs, 3 frees, 16,392 bytes allocated
+==7508== 
+==7508== All heap blocks were freed -- no leaks are possible
+==7508== 
+==7508== For lists of detected and suppressed errors, rerun with: -s
+==7508== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
 ===================
 
 ++++++++++++++++++++++
-TESTS_WITH_NO_LEAK: 3
+TESTS_WITH_NO_LEAK: 10
 TESTS_SHOWING_LEAK: 0
 ++++++++++++++++++++++
 

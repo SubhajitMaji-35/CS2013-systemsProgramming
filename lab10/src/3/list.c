@@ -43,6 +43,11 @@ int shrink(List* l){
 	// TODO: Complete the function
 	
 	size_t size;
+	//if(l->curr_count == 0){
+	//	free(l->array);
+	//	l->max_count =0;
+	//	l->array = NULL;
+	//}
 
 	if(l->curr_count < l->max_count/2){
 		size = l-> max_count * sizeof(int) / 2;
@@ -54,6 +59,7 @@ int shrink(List* l){
 			l->max_count = l-> max_count /2;
 		}
 	}
+
 	return 0;
 }
 

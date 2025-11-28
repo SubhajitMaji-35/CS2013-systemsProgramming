@@ -1,0 +1,242 @@
+===================
+test5: NO LEAKS
+Valgrind output: 
+==4865== Memcheck, a memory error detector
+==4865== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==4865== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==4865== Command: /home/112401035/cs2013_112401035/labe3/src/5/5
+==4865== 
+4.24264068712
+3.60555127546
+==4865== 
+==4865== HEAP SUMMARY:
+==4865==     in use at exit: 0 bytes in 0 blocks
+==4865==   total heap usage: 3 allocs, 3 frees, 16,400 bytes allocated
+==4865== 
+==4865== All heap blocks were freed -- no leaks are possible
+==4865== 
+==4865== For lists of detected and suppressed errors, rerun with: -s
+==4865== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test9: NO LEAKS
+Valgrind output: 
+==4870== Memcheck, a memory error detector
+==4870== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==4870== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==4870== Command: /home/112401035/cs2013_112401035/labe3/src/5/5
+==4870== 
+3.46410161514
+6.78232998313
+==4870== 
+==4870== HEAP SUMMARY:
+==4870==     in use at exit: 0 bytes in 0 blocks
+==4870==   total heap usage: 3 allocs, 3 frees, 16,400 bytes allocated
+==4870== 
+==4870== All heap blocks were freed -- no leaks are possible
+==4870== 
+==4870== For lists of detected and suppressed errors, rerun with: -s
+==4870== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test7: NO LEAKS
+Valgrind output: 
+==4875== Memcheck, a memory error detector
+==4875== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==4875== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==4875== Command: /home/112401035/cs2013_112401035/labe3/src/5/5
+==4875== 
+5.74456264846
+8.12403840464
+7.41619848710
+==4875== 
+==4875== HEAP SUMMARY:
+==4875==     in use at exit: 0 bytes in 0 blocks
+==4875==   total heap usage: 3 allocs, 3 frees, 16,408 bytes allocated
+==4875== 
+==4875== All heap blocks were freed -- no leaks are possible
+==4875== 
+==4875== For lists of detected and suppressed errors, rerun with: -s
+==4875== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test0: NO LEAKS
+Valgrind output: 
+==4880== Memcheck, a memory error detector
+==4880== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==4880== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==4880== Command: /home/112401035/cs2013_112401035/labe3/src/5/5
+==4880== 
+1.73205081001
+2.23606797750
+==4880== 
+==4880== HEAP SUMMARY:
+==4880==     in use at exit: 0 bytes in 0 blocks
+==4880==   total heap usage: 3 allocs, 3 frees, 16,400 bytes allocated
+==4880== 
+==4880== All heap blocks were freed -- no leaks are possible
+==4880== 
+==4880== For lists of detected and suppressed errors, rerun with: -s
+==4880== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test2: NO LEAKS
+Valgrind output: 
+==4885== Memcheck, a memory error detector
+==4885== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==4885== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==4885== Command: /home/112401035/cs2013_112401035/labe3/src/5/5
+==4885== 
+5.65685425082
+2.82842712505
+==4885== 
+==4885== HEAP SUMMARY:
+==4885==     in use at exit: 0 bytes in 0 blocks
+==4885==   total heap usage: 3 allocs, 3 frees, 16,400 bytes allocated
+==4885== 
+==4885== All heap blocks were freed -- no leaks are possible
+==4885== 
+==4885== For lists of detected and suppressed errors, rerun with: -s
+==4885== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test8: NO LEAKS
+Valgrind output: 
+==4890== Memcheck, a memory error detector
+==4890== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==4890== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==4890== Command: /home/112401035/cs2013_112401035/labe3/src/5/5
+==4890== 
+6.63324958071
+3.46410161514
+==4890== 
+==4890== HEAP SUMMARY:
+==4890==     in use at exit: 0 bytes in 0 blocks
+==4890==   total heap usage: 3 allocs, 3 frees, 16,400 bytes allocated
+==4890== 
+==4890== All heap blocks were freed -- no leaks are possible
+==4890== 
+==4890== For lists of detected and suppressed errors, rerun with: -s
+==4890== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test6: NO LEAKS
+Valgrind output: 
+==4895== Memcheck, a memory error detector
+==4895== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==4895== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==4895== Command: /home/112401035/cs2013_112401035/labe3/src/5/5
+==4895== 
+4.00000000000
+2.00000000000
+==4895== 
+==4895== HEAP SUMMARY:
+==4895==     in use at exit: 0 bytes in 0 blocks
+==4895==   total heap usage: 3 allocs, 3 frees, 16,400 bytes allocated
+==4895== 
+==4895== All heap blocks were freed -- no leaks are possible
+==4895== 
+==4895== For lists of detected and suppressed errors, rerun with: -s
+==4895== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test1: NO LEAKS
+Valgrind output: 
+==4900== Memcheck, a memory error detector
+==4900== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==4900== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==4900== Command: /home/112401035/cs2013_112401035/labe3/src/5/5
+==4900== 
+2.23606797750
+2.00000000000
+3.16227766518
+==4900== 
+==4900== HEAP SUMMARY:
+==4900==     in use at exit: 0 bytes in 0 blocks
+==4900==   total heap usage: 3 allocs, 3 frees, 16,408 bytes allocated
+==4900== 
+==4900== All heap blocks were freed -- no leaks are possible
+==4900== 
+==4900== For lists of detected and suppressed errors, rerun with: -s
+==4900== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test10: NO LEAKS
+Valgrind output: 
+==4905== Memcheck, a memory error detector
+==4905== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==4905== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==4905== Command: /home/112401035/cs2013_112401035/labe3/src/5/5
+==4905== 
+2.64575131111
+2.44948974279
+5.00000000005
+==4905== 
+==4905== HEAP SUMMARY:
+==4905==     in use at exit: 0 bytes in 0 blocks
+==4905==   total heap usage: 3 allocs, 3 frees, 16,408 bytes allocated
+==4905== 
+==4905== All heap blocks were freed -- no leaks are possible
+==4905== 
+==4905== For lists of detected and suppressed errors, rerun with: -s
+==4905== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test4: NO LEAKS
+Valgrind output: 
+==4910== Memcheck, a memory error detector
+==4910== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==4910== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==4910== Command: /home/112401035/cs2013_112401035/labe3/src/5/5
+==4910== 
+5.74456264846
+4.58257569496
+9.94987437119
+2.82842712505
+==4910== 
+==4910== HEAP SUMMARY:
+==4910==     in use at exit: 0 bytes in 0 blocks
+==4910==   total heap usage: 3 allocs, 3 frees, 16,416 bytes allocated
+==4910== 
+==4910== All heap blocks were freed -- no leaks are possible
+==4910== 
+==4910== For lists of detected and suppressed errors, rerun with: -s
+==4910== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+===================
+test3: NO LEAKS
+Valgrind output: 
+==4916== Memcheck, a memory error detector
+==4916== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==4916== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==4916== Command: /home/112401035/cs2013_112401035/labe3/src/5/5
+==4916== 
+5.47722557565
+6.70820393250
+3.31662480523
+==4916== 
+==4916== HEAP SUMMARY:
+==4916==     in use at exit: 0 bytes in 0 blocks
+==4916==   total heap usage: 3 allocs, 3 frees, 16,408 bytes allocated
+==4916== 
+==4916== All heap blocks were freed -- no leaks are possible
+==4916== 
+==4916== For lists of detected and suppressed errors, rerun with: -s
+==4916== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+===================
+
+++++++++++++++++++++++
+TESTS_WITH_NO_LEAK: 11
+TESTS_SHOWING_LEAK: 0
+++++++++++++++++++++++
+
